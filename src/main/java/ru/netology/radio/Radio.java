@@ -4,7 +4,7 @@ public class Radio {
     private int numberOfRadioStation;
     public int volume;
 
-    public int getNumberOfRadioStation(){
+    public int getNumberOfRadioStation() {
         return numberOfRadioStation;
     }
 
@@ -25,10 +25,10 @@ public class Radio {
     }
 
     public void setRadioStation(int setRadioStation) {
-        if (setRadioStation > 9){
+        if (setRadioStation > 9) {
             return;
         }
-        if (setRadioStation < 0){
+        if (setRadioStation < 0) {
             return;
         }
         numberOfRadioStation = setRadioStation;

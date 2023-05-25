@@ -3,8 +3,6 @@ package ru.netology.radio;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.awt.image.BufferedImageOp;
-
 public class RadioTest {
 
     @Test
@@ -16,7 +14,6 @@ public class RadioTest {
         int actual = radio.getNumberOfRadioStation();
 
         Assertions.assertEquals(actual, expected);
-
     }
 
     @Test
@@ -87,7 +84,7 @@ public class RadioTest {
     }
 
     @Test
-    void increaseVolume() {
+    void increaseVolume(){
         Radio radio = new Radio();
         radio.volume = 20;
 
@@ -99,7 +96,7 @@ public class RadioTest {
     }
 
     @Test
-    void increaseVolumeIfMax() {
+    void increaseVolumeIfMax(){
         Radio radio = new Radio();
         radio.volume = 100;
 
@@ -111,7 +108,7 @@ public class RadioTest {
     }
 
     @Test
-    void decreaseVolume() {
+    void decreaseVolume(){
         Radio radio = new Radio();
         radio.volume = 20;
 
@@ -123,7 +120,7 @@ public class RadioTest {
     }
 
     @Test
-    void decreaseVolumeIfMin() {
+    void decreaseVolumeIfMin(){
         Radio radio = new Radio();
         radio.volume = 0;
 
